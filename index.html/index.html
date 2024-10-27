@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="left">
+            <img class="logo" src="logo.jpg" alt="">
+              <h1> Subash Shrestha</h1>
+        <ul class="shown">
+            <li class="mobile"><a href="index.html">Home</a></li>
+            <li class="mobile"><a href="About.html">About</a></li>
+            <li class="mobile"><a href="contact.html">Contact</a></li>
+            <li class="bar"><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+
+        <ul class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="close"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const barEle = document.querySelector(".bar")
+        const hideEle = document.querySelector(".hide")
+        const closeEle = document.querySelector(".close")
+        barEle.addEventListener("click",()=>{
+            hideEle.style.display = "block"
+        })
+        
+        
+        closeEle.addEventListener("click", ()=>{
+            hideEle.style.display = "none"
+
+        })
+    </script>
+    <marquee bgcolor="yellow" direction="right"> Welcome to my new website</marquee>
+    
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Developer | Landing Page</title>
+        <link rel="stylesheet" href="style.css" />
+      </head>
+      <body>
+        <section class="hero_section">
+          <div class="text_container">
+            <h2><span class="lg_text">Hi,</span> I am Subash Shrestha</h2>
+            <h1 class="lg_text"> FRONTEND DEVELOPER</h1>
+          </div>
+        </section>
+        <section class="black_box">
+          <h2>WORK, I CAN DO FOR <span>YOU</span></h2>
+        </section>
+        <section class="work">
+          <div class="grid_item">
+            <div class="card">
+              <div class="image_container">
+                <img src="image1.jfif" alt="web development" />
+              </div>
+              <div class="card_content">
+                <h3>Web Development</h3>
+                <p>
+                  Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet
+                   (a private network).[1] W
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <div class="image_container">
+                <img src="image3.jfif" alt="app development" />
+              </div>
+              <div class="card_content">
+                <h3>App Development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                  quibusdam ex quaerat quasi nostrum tempore.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="grid_item">
+            <div class="card">
+              <div class="image_container">
+                <img src="image2.jfif" alt="web development" />
+              </div>
+              <div class="card_content">
+                <h3>UI UX Design</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
+                  quibusdam ex quaerat quasi nostrum tempore.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="bottom_section">
+          <div class="contact">
+            <h2>Contact Me</h2>
+            <p>
+              
+            </p>
+            <p>dosomecoding@example.test</p>
+          </div>
+          <div class="about">
+            <h2>About Me</h2>
+    
+            <p>
+              
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolor,
+              esse quasi doloremque temporibus quis.
+            </p>
+          </div>
+        </section>
+        <footer> &copyright;2024 SubashShrestha</footer>
+      
+    
+</body>
+</html>
